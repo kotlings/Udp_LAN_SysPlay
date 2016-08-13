@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Udp_playsync</string>
+    <string name="prev">上一个</string>
+    <string name="next">下一个</string>
+    <string name="play">播放</string>
+    <string name="pause">暂停</string>
+    <string name="notsupport">不支持的文件</string>
+    <string name="loadhint">正在加载，请稍候...</string>
+    <string name="dekhint">软件授权失败</string>
+</resources>

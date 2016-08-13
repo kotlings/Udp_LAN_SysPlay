@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000" >
+	<ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/picture" />
+    
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="1200dp"
+        android:layout_height="800dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="200dp"
+        android:focusable="false"
+        android:visibility="visible" />
+    <TextView
+        android:id="@+id/textViewDekHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="#7EEE"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/dekhint"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#F02"
+        android:visibility="gone" />
+   <RelativeLayout
+        android:id="@+id/layoutProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:background="#3EEE"
+        android:gravity="center"
+        android:visibility="invisible" >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/progressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/loadhint" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:padding="8dp"
+        android:background="#6789"
+        android:visibility="visible"
+         >
+
+        <Button
+            android:id="@+id/buttonPrev"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/prev" />
+
+        <Button
+            android:id="@+id/buttonPlay"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/buttonPrev"
+            android:text="@string/play" />
+        
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/buttonPlay"
+            android:text="@string/next" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buttonPrev"
+            android:layout_alignRight="@+id/buttonNext"
+            android:layout_below="@+id/buttonPrev"
+            android:layout_marginTop="10dp"
+             />
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBar"
+            android:layout_centerHorizontal="true"
+            android:text="00:00:00"
+            android:textColor="#EEE"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+   </RelativeLayout>
+   
+</RelativeLayout>
