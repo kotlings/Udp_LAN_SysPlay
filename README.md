@@ -1,7 +1,6 @@
 # Udp_LAN_SysPlay
 Two Solutions for LANSync Play Medias By UDP Protocol
-
-# Broadcast
+ 
 1.Using the UDP Broadcast 
 Thought the UDP Broadcast Formality.
 2.Multicast
