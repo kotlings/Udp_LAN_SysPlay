@@ -1,10 +1,14 @@
 # Udp_LAN_SysPlay
 Two Solutions for LANSync Play Medias By UDP Protocol
  
-1.Using the UDP Broadcast \n
-Thought the UDP Broadcast Formality.\n
-2.Multicast\n
-Using the UDP Multicast Formality.(xiao mi2  has some problems)\n
+1.Using the UDP Broadcast 
+
+Thought the UDP Broadcast Formality.
+
+2.Multicast
+
+Using the UDP Multicast Formality.(xiao mi2  has some problems)
+
 
 #How to use it?
 Make a Folder in the SDcard root path that named AutoPlayDir. Then put the Video and Images in this.
